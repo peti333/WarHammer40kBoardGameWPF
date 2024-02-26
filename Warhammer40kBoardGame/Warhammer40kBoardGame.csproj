@@ -8,4 +8,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+
 </Project>

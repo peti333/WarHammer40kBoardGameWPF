@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Warhammer40kBoardGame.View;
 
 namespace Warhammer40kBoardGame
 {
@@ -19,6 +20,20 @@ namespace Warhammer40kBoardGame
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void StartButton_Click(object sender, RoutedEventArgs e)
+        {
+            GameWindow gameWindow = new GameWindow();
+            gameWindow.Show();
+            this.Close();
+        }
+
+        private void Inventory_Click(object sender, RoutedEventArgs e)
+        {
+            InventoryWindow inventoryWindow = new InventoryWindow();
+            inventoryWindow.Show();
+            this.Close();
         }
     }
 }
