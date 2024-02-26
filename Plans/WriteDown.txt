@@ -1,0 +1,67 @@
+View
+ - Menu
+ - UnitImportWindow
+    - Create units by adding in their attributes and abilites, weapons etc
+ - GameWindow
+     - Cp and Vp (Control points / Victory points)
+     - Map
+     - Inventory:
+        - Units
+        - Stratagems
+        - Obstacle / Ruin 
+GameViewModel
+Model
+ - Dice Thrower
+    - Select dice: d6 or d3
+    - Type number of dice to throw OR click on a weapon to roll all shots/hits for that unit
+    - Little window of all the dice, click effect(reroll, sustained hits x etc.) to apply to dice
+    - Filter button:
+       - choose effect and type in dice number, applies effect on all dice in range
+       - ex.: Filter -> Reroll + =1  => Rerolls all dice with value of 1
+ - Stratagems
+    - Name
+    - Contol point
+    - Effect
+       - Pickup
+       - Can advance and charge
+       ...
+ - Units
+    - Base Size (32mm, ...)
+    - Attributes (Movement, Toughness, Save, Wound, LeaderShip, Objective Control)
+    - Abilites (Leader, DeepStrike, etc)
+    - WarGear Abilites
+    - Unit Composition
+    - Ranged Weapons
+    - Melee Weapons
+    - WarGear Options
+    - KeyWords (Infantry, BattleLine, Chaos, etc...)
+    - Led by (Characters)
+    - isBattleShocked
+    - RoundActions:
+       - Can unit move more (4 inch then another 4 inch)
+       - Can unit shoot
+       - Can unit Charge
+       - Does Unit need battleshock test
+ - Map
+    - 44 x 60 inch
+    - Units move on map via movement button:
+       - Cursor shows where the model would be placed (green good / red bad)
+       - cursor draws a line from the edge of the base to edge of the new Position base
+       - line has an indicator of how many inches that movement would be
+ - Factions
+    - Orks
+    - Chaos Space Marines
+    - Space Marines
+    - GeneStealer Cult
+ - 5 Battle round
+    - Deployment
+       - Deployment phase
+          - Strategic Reserve / DeepStrike
+       - Deployment area
+    - Primary and Secondary Missions
+    - 2 players switching sides
+    - game phases: Command -> Movement -> Shooting -> Charge -> Fighting -> End of Player Turn
+
+Persistence
+ - Game state
+ - Unit attributes
